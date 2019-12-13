@@ -1,0 +1,85 @@
+.conteiner {
+    position: relative;
+    .car {
+        position: relative;
+        animation: null;
+        .carImg {
+            position: absolute;
+            width: 100px;
+        }
+        .lightImg {
+            position: absolute;
+            width: 90px;
+            padding: 10px 0px 0px 90px;
+        }
+        .bulletImg {
+            position: absolute;
+            width: 50px;
+            padding: 42px 0px 0px 90px;
+            animation: shoot 0.5s infinite ease;
+        }
+    }
+}
+
+.display {
+    display: none;
+}
+
+@keyframes shoot {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes moveR {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes moveL {
+    1% {
+        right: 0;
+        transform: scaleX(-1);
+    }
+    100% {
+        right: 100%;
+        transform: scaleX(-1);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding-top: 200px;
+    margin: 0 auto;
+    .buttL {
+        background-color: rgb(146, 98, 242);
+    }
+    .buttR {
+        background-color: rgb(146, 98, 242);
+    }
+    .stop {
+        background-color: red;
+    }
+    .lightButt {       
+        background-color: rgb(242, 220, 98);
+    }
+    .bulletButt {
+        background-color: rgb(154, 145, 116);
+    }
+    .view {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 100px; 
+        border-radius: 10px;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,144 @@
+.conteiner {
+  position: relative;
+}
+
+.conteiner .car {
+  position: relative;
+  -webkit-animation: null;
+          animation: null;
+}
+
+.conteiner .car .carImg {
+  position: absolute;
+  width: 100px;
+}
+
+.conteiner .car .lightImg {
+  position: absolute;
+  width: 90px;
+  padding: 10px 0px 0px 90px;
+}
+
+.conteiner .car .bulletImg {
+  position: absolute;
+  width: 50px;
+  padding: 42px 0px 0px 90px;
+  -webkit-animation: shoot 0.5s infinite ease;
+          animation: shoot 0.5s infinite ease;
+}
+
+.display {
+  display: none;
+}
+
+@-webkit-keyframes shoot {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes moveR {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveR {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes moveL {
+  1% {
+    right: 0;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    right: 100%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+@keyframes moveL {
+  1% {
+    right: 0;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  100% {
+    right: 100%;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+
+.buttons .buttL {
+  background-color: #9262f2;
+}
+
+.buttons .buttR {
+  background-color: #9262f2;
+}
+
+.buttons .stop {
+  background-color: red;
+}
+
+.buttons .lightButt {
+  background-color: #f2dc62;
+}
+
+.buttons .bulletButt {
+  background-color: #9a9174;
+}
+
+.buttons .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 100px;
+  border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=main.css.map */
