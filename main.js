@@ -6,7 +6,10 @@ const lightButt = document.querySelector('.lightButt');
 const lightImg = document.querySelector('.lightImg');
 const bulletButt = document.querySelector('.bulletButt');
 const bulletImg = document.querySelector('.bulletImg');
-const onOff = document.querySelector('.onOff');
+const onLight = document.querySelector('.onLight');
+const offLight = document.querySelector('.offLight');
+const onShoot = document.querySelector('.onShoot');
+const offShoot = document.querySelector('.offShoot');
 let str = '';
 
 
@@ -21,8 +24,11 @@ stop.addEventListener('click', () => {
 });
 lightButt.addEventListener('click', () => {
   lightImg.classList.toggle('display');
+  onLight.classList.toggle('display');
+  offLight.classList.toggle('display');
 });
 bulletButt.addEventListener('click', () => {
   bulletImg.classList.toggle('display');
-
+  onShoot.classList.toggle('display');
+  offShoot.classList.toggle('display');
 });
